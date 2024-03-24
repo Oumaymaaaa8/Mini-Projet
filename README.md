@@ -6,7 +6,7 @@ Ce projet Java explore Java RMI, gRPC et les sockets pour la communication distr
 
 Ce projet comporte 3 parties (dossiers) , chaque dossier traite une partie de ce mini projet.
 
-## - Gestion des taches avec JAVA RMI
+## Partie I : Gestion des taches avec JAVA RMI
 
 # Étapes pour le test :
 
