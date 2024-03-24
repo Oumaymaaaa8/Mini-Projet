@@ -6,7 +6,7 @@ Ce projet comporte 3 parties (dossiers) , chaque dossier traite une partie de ce
 
 ## Partie I : Gestion des taches avec JAVA RMI
 
-# ##Étapes pour le test :
+### Étapes pour le test :
 
 1. Ouvrir le terminal dans le dossier du projet
 2. compiler tous les classes java existants a l'aide de la commande suivante :
