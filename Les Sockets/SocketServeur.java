@@ -19,7 +19,6 @@ public class SocketServeur {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("Nouveau client connecté");
 
-                BufferedReader inFromClient = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 // reception des messages des clients
 
                 PrintWriter writer = new PrintWriter(clientSocket.getOutputStream(), true);

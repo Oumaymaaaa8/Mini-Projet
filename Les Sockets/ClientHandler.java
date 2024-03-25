@@ -3,15 +3,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
 public class ClientHandler implements Runnable {
     private Socket clientSocket;
     private BufferedReader reader;
     private PrintWriter writer;
 
-    public ClientHandler(Socket clientSocket) throws UnknownHostException, IOException {
-        this.clientSocket = new Socket("localhost", 9090);
+    public ClientHandler(Socket clientSocket) {
+        this.clientSocket = clientSocket;
         try {
             reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             writer = new PrintWriter(clientSocket.getOutputStream(), true);
@@ -25,8 +24,6 @@ public class ClientHandler implements Runnable {
         String message;
         try {
             while ((message = reader.readLine()) != null) {
-                System.out.println("Received message: " + message);
-
                 writer.println(message);
             }
             clientSocket.close();
