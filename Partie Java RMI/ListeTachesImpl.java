@@ -10,20 +10,21 @@ public class ListeTachesImpl extends UnicastRemoteObject implements ServiceTache
         this.taches = new ArrayList<>();
     }
 
-    public void ajoutTache(Tache tache) {
+    public void ajoutTache(Tache tache) throws RemoteException {
         taches.add(tache);
     }
 
-    public void supprimerTache(int index) {
+    public void supprimerTache(int index) throws RemoteException {
         if (index >= 0 && index < taches.size()) {
             taches.remove(index);
         }
     }
 
-    public void afficherTaches() {
+    public void afficherTaches() throws RemoteException {
         System.out.println("List des taches :");
-        for (int i = 0; i < taches.size(); i++) {
-            System.out.println((i + 1) + ". " + taches.get(i));
+
+        for (Tache t : taches) {
+            System.out.println(t.toString());
         }
     }
 

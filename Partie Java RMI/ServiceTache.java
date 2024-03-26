@@ -8,6 +8,6 @@ public interface ServiceTache extends Remote {
 
     void supprimerTache(int index) throws RemoteException;
 
-    void afficherTaches() throws RemoteException;
+    public void afficherTaches() throws RemoteException;
 
 }

@@ -1,4 +1,6 @@
-public class Tache {
+import java.io.Serializable;
+
+public class Tache implements Serializable {
     private String description;
     private int id;
 
