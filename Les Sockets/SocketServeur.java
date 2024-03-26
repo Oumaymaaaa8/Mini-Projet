@@ -1,14 +1,12 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SocketServeur {
-    public static List<PrintWriter> clientWriters = new ArrayList<>();
+    public static List<ClientHandler> clientsList = new ArrayList<>();
 
     public static void main(String[] args) {
         try {
@@ -16,23 +14,31 @@ public class SocketServeur {
             System.out.println("Serveur en marche...");
 
             while (true) {
+
                 Socket clientSocket = serverSocket.accept();
-                System.out.println("Nouveau client connecté");
+                System.out.println("Client connected: " + clientSocket);
+                ClientHandler clientHandler = new ClientHandler(clientSocket);
+                clientsList.add(clientHandler);
 
-                // reception des messages des clients
-
-                PrintWriter writer = new PrintWriter(clientSocket.getOutputStream(), true);
-                // stocker les messages envoyés
-
-                clientWriters.add(writer);
-                // un thread s'occupe de chaque client
-
-                Thread clientHandler = new Thread(new ClientHandler(clientSocket));
-                clientHandler.start();
+                Thread clientThread = new Thread(clientHandler);
+                clientThread.start();
 
             }
+
         } catch (IOException e) {
+
             e.printStackTrace();
         }
+
+    }
+
+    public static void broadcast(String message) {
+        for (ClientHandler client : clientsList) {
+            client.sendMessage("client " + client.toString() + "said  : " + message);
+        }
+    }
+
+    public static void removeClient(ClientHandler client) {
+        clientsList.remove(client);
     }
 }
