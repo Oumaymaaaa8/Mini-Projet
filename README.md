@@ -6,7 +6,6 @@ Bien sûr, voici une introduction améliorée pour votre projet Git :
 
 Ce projet Java explore les technologies de communication distribuée, à savoir Java RMI, gRPC et les sockets. L'objectif principal est de comprendre en profondeur les différences, les fonctionnalités et les cas d'utilisation de chacune de ces technologies en implémentant des serveurs et des clients pour chaque approche.
 
-
 Ce projet se concentre sur trois technologies majeures :
 
 1. **Java RMI (Remote Method Invocation)** : Un mécanisme intégré à Java pour permettre l'appel de méthodes sur des objets distants, offrant une communication transparente entre les processus Java.
