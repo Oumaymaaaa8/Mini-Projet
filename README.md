@@ -13,7 +13,6 @@ Ce projet se concentre sur trois technologies majeures :
 2. **gRPC** : Un framework RPC (Remote Procedure Call) open-source développé par Google, basé sur le protocole HTTP/2 pour une communication efficace et polyglotte entre des services distribués.
 
 3. **Sockets** : Les sockets offrent un moyen bas niveau de communication entre des applications sur un réseau, permettant un contrôle total sur la communication à un niveau de granularité plus fin.
-   **lien rapport * : https://tinyurl.com/3bdzk7fy
 ## Objectif
 
 Ce projet vise à comparer ces trois approches en implémentant des fonctionnalités similaires à l'aide de chacune d'elles. Chaque technologie sera utilisée pour développer des fonctionnalités spécifiques, permettant ainsi une évaluation comparative de leurs performances, de leur complexité de mise en œuvre et de leur extensibilité.
@@ -27,6 +26,7 @@ Le projet est divisé en plusieurs parties, chaque partie étant dédiée à une
 - **Partie III : Service de Chat avec les Sockets**
 
 Chaque partie du projet contient des instructions détaillées sur la configuration et le test des serveurs et des clients pour cette technologie particulière.
+   **lien rapport* : https://tinyurl.com/3bdzk7fy
 
 ---
 
