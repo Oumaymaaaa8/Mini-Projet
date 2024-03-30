@@ -25,7 +25,8 @@ Le projet est divisé en plusieurs parties, chaque partie étant dédiée à une
 - **Partie II : Communication Distribuée avec gRPC**
 - **Partie III : Service de Chat avec les Sockets**
 
-Chaque partie du projet contient des instructions détaillées sur la configuration et le test des serveurs et des clients pour cette technologie particulière. \*_lien rapport_ : https://tinyurl.com/3bdzk7fy
+Chaque partie du projet contient des instructions détaillées sur la configuration et le test des serveurs et des clients pour cette technologie particulière.
+## \*_lien rapport_ : https://tinyurl.com/3bdzk7fy
 
 ---
 
