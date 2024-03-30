@@ -49,20 +49,18 @@ Voici les instructions de test pour exécuter le serveur et le client gRPC dans 
 
 1. Ouvrez Eclipse.
 2. Importez le dossier "GRPCmessagerie" dans Eclipse en tant que projet Java.
-3. Ouvrez la classe principale du serveur gRPC dans Eclipse (assurez-vous que la classe principale est correctement identifiée dans le projet).
-4. Cliquez avec le bouton droit sur la classe principale du serveur.
+3. Ouvrez la classe principale du serveur gRPC dans Eclipse (assurez-vous que la classe principale est correctement identifiée dans le projet : le dossier est nommé ArtifactId ).
+4. Cliquez avec le bouton droit sur la classe principale du serveur : src/main/java/Server.java.
 5. Sélectionnez "Run As" > "Java Application".
    Le serveur gRPC démarrera et affichera les logs dans la console Eclipse.
 
 #### Exécuter le Client gRPC :
 
 1. Dans Eclipse, assurez-vous que le projet "GRPCmessagerie" est ouvert.
-2. Ouvrez la classe principale du client gRPC dans Eclipse (assurez-vous qu'elle est correctement identifiée dans le projet).
-3. Cliquez avec le bouton droit sur la classe principale du client.
+2. Ouvrez la classe principale du client gRPC dans Eclipse (assurez-vous qu'elle est correctement identifiée dans le projet: le dossier est nommé id ).
+3. Cliquez avec le bouton droit sur la classe principale du client : src/main/java/id/Client.java.
 4. Sélectionnez "Run As" > "Java Application".
    Le client gRPC démarrera et commencera à envoyer des requêtes au serveur.
-
-Assurez-vous de suivre attentivement ces instructions pour exécuter le serveur et le client gRPC avec succès dans Eclipse.
 
 ## Partie III : Service de Chat avec les Sockets
 
