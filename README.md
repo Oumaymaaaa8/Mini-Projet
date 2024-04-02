@@ -2,7 +2,6 @@
 
 ## Structure du Projet
 
-Le projet est divisé en plusieurs parties, chaque partie étant dédiée à une technologie spécifique de communication distribuée :
 
 - **Partie I : Gestion des Tâches avec Java RMI**
 - **Partie II : Communication Distribuée avec gRPC**
